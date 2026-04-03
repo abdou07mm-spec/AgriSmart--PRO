@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriSmart - نظام الري الذكي وتحليل التربة</title>
-    <!-- Font Awesome للأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -20,6 +18,7 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         /* Header */
@@ -116,6 +115,7 @@
             transition: transform 0.3s, box-shadow 0.3s;
             text-decoration: none;
             display: inline-block;
+            text-align: center;
         }
 
         .btn-primary:hover {
@@ -147,9 +147,7 @@
             text-align: center;
         }
 
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
+        .hero-image svg {
             animation: float 3s ease-in-out infinite;
         }
 
@@ -486,40 +484,6 @@
             text-align: center;
         }
 
-        .lead-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .lead-form input {
-            flex: 1;
-            padding: 1rem 1.5rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            outline: none;
-            min-width: 250px;
-        }
-
-        .lead-form button {
-            background: #1a5f3e;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .lead-form button:hover {
-            transform: scale(1.05);
-        }
-
         .benefits {
             display: flex;
             justify-content: center;
@@ -635,15 +599,6 @@
             .analysis-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .lead-form {
-                flex-direction: column;
-            }
-            
-            .lead-form input,
-            .lead-form button {
-                width: 100%;
-            }
         }
 
         /* Animations */
@@ -654,16 +609,6 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
         }
     </style>
 </head>
@@ -689,23 +634,19 @@
             </h1>
             <p>نظام الري الذكي + محلل التربة الرقمي | أول حل متكامل في الجزائر</p>
             <div class="hero-buttons">
-                <a href="#lead" class="btn-primary">🚀 سجل اهتمامك</a>
+                <a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank" class="btn-primary">🚀 سجل اهتمامك</a>
                 <a href="#how-it-works" class="btn-secondary">▶ شاهد كيف يعمل</a>
             </div>
         </div>
         <div class="hero-image">
             <svg width="400" height="400" viewBox="0 0 400 400">
-                <!-- هاتف -->
                 <rect x="120" y="50" width="160" height="280" rx="20" fill="#333"/>
                 <rect x="130" y="60" width="140" height="250" rx="10" fill="#fff"/>
-                <!-- شاشة الهاتف -->
                 <rect x="140" y="80" width="120" height="180" rx="5" fill="#1a5f3e"/>
                 <circle cx="200" cy="280" r="15" fill="#ff9800"/>
-                <!-- نباتات -->
                 <path d="M200 150 L200 100 L190 90 L200 80 L210 90 L200 100" fill="#4caf50"/>
                 <path d="M180 130 L180 80 L170 70 L180 60 L190 70 L180 80" fill="#4caf50"/>
                 <path d="M220 140 L220 90 L210 80 L220 70 L230 80 L220 90" fill="#4caf50"/>
-                <!-- قطرات ماء -->
                 <circle cx="160" cy="320" r="5" fill="#2196f3" opacity="0.6"/>
                 <circle cx="200" cy="330" r="7" fill="#2196f3" opacity="0.6"/>
                 <circle cx="240" cy="320" r="5" fill="#2196f3" opacity="0.6"/>
@@ -752,7 +693,7 @@
                     <li><i class="fas fa-check"></i> تطبيق هاتف للتحكم</li>
                     <li><i class="fas fa-check"></i> جدول سقي ذكي</li>
                 </ul>
-                <a href="#lead" class="btn-primary">أطلب الآن</a>
+                <a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank" class="btn-primary">أطلب الآن</a>
             </div>
 
             <div class="product-card featured">
@@ -765,7 +706,7 @@
                     <li><i class="fas fa-check"></i> توصيات تسميد دقيقة</li>
                     <li><i class="fas fa-check"></i> كشف الأمراض بالصور</li>
                 </ul>
-                <a href="#lead" class="btn-primary">أطلب الآن</a>
+                <a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank" class="btn-primary">أطلب الآن</a>
             </div>
 
             <div class="product-card">
@@ -778,7 +719,7 @@
                     <li><i class="fas fa-check"></i> تطبيق يحلل الألوان</li>
                     <li><i class="fas fa-check"></i> يعطي أرقام ppm دقيقة</li>
                 </ul>
-                <a href="#lead" class="btn-primary">أطلب الآن</a>
+                <a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank" class="btn-primary">أطلب الآن</a>
             </div>
         </div>
     </section>
@@ -815,7 +756,6 @@
             <div class="analysis-card">
                 <h3>من الألوان إلى أرقام دقيقة</h3>
                 <p>حوّلنا عدة Hanna HI3896 التقليدية إلى جهاز رقمي احترافي</p>
-                
                 <div class="comparison">
                     <div class="comparison-item bad">
                         <i class="fas fa-times-circle" style="color: #f44336;"></i>
@@ -844,14 +784,11 @@
             
             <div style="text-align: center;">
                 <svg width="300" height="300" viewBox="0 0 300 300">
-                    <!-- أنبوب اختبار -->
                     <rect x="120" y="50" width="60" height="200" rx="10" fill="#ccc" opacity="0.3"/>
                     <rect x="130" y="60" width="40" height="180" rx="5" fill="#ff9800" opacity="0.6"/>
-                    <!-- هاتف -->
                     <rect x="180" y="150" width="100" height="120" rx="10" fill="#333"/>
                     <rect x="185" y="155" width="90" height="100" rx="5" fill="#fff"/>
                     <circle cx="235" cy="265" r="8" fill="#4caf50"/>
-                    <!-- سهم -->
                     <path d="M170 150 L200 170" stroke="#ff9800" stroke-width="3" marker-end="url(#arrow)"/>
                     <defs>
                         <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
@@ -887,12 +824,11 @@
 
     <section class="section lead-capture" id="lead">
         <h2 class="section-title" style="color: white;">🚀 كن أول من يجرب النظام</h2>
-        <p style="font-size: 1.3rem; margin-bottom: 2rem;">سجل بريدك الإلكتروني واحصل على خصم 20% للمتبنين الأوائل</p>
+        <p style="font-size: 1.3rem; margin-bottom: 2rem;">انقر على الزر بالأسفل للانتقال إلى المنصة وبدء تجربتك</p>
         
-        <form class="lead-form" onsubmit="event.preventDefault(); alert('شكراً لتسجيلك! سنتواصل معك قريباً');">
-            <input type="email" placeholder="example@email.com" required>
-            <button type="submit">سجل الآن مجاناً</button>
-        </form>
+        <div style="display: flex; justify-content: center;">
+            <a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank" class="btn-primary" style="background: #1a5f3e; padding: 1.2rem 4rem; font-size: 1.4rem;">سجل الآن مجاناً</a>
+        </div>
 
         <div class="benefits">
             <span>🎁 تجربة مجانية 30 يوم</span>
@@ -921,7 +857,7 @@
                     <li><a href="#products">منتجاتنا</a></li>
                     <li><a href="#how-it-works">كيف يعمل</a></li>
                     <li><a href="#digital">التحليل الرقمي</a></li>
-                    <li><a href="#lead">سجل اهتمامك</a></li>
+                    <li><a href="https://abdou07mm-spec.github.io/AgriSmart-Pro/" target="_blank">سجل اهتمامك</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -942,12 +878,12 @@
             </div>
         </div>
         <div class="copyright">
-            © 2026 AgriSmart.dz - جميع الحقوق محفوظة
+            © 2026 AgriSmart.dz - جميع الحقوق محفوظة | مهندس عبد الرزاق قريدي
         </div>
     </footer>
 
     <script>
-        // سلاسة التمرير عند الضغط على الروابط
+        // سلاسة التمرير عند الضغط على الروابط الداخلية فقط
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -983,11 +919,10 @@
             observer.observe(el);
         });
 
-        // عداد تفاعلي (تأثير رقمي)
-        let count = 0;
+        // عداد تفاعلي (تأثير رقمي) بسيط
         const counterElement = document.createElement('div');
-        counterElement.style.cssText = 'position: fixed; bottom: 20px; left: 20px; background: #1a5f3e; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; z-index: 9999;';
-        counterElement.innerHTML = `👥 ${Math.floor(Math.random() * 50) + 100} مزارع سجلوا هذا الشهر`;
+        counterElement.style.cssText = 'position: fixed; bottom: 20px; left: 20px; background: #1a5f3e; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; z-index: 9999; box-shadow: 0 4px 10px rgba(0,0,0,0.2);';
+        counterElement.innerHTML = `👥 ${Math.floor(Math.random() * 50) + 120} مزارع سجلوا هذا الشهر`;
         document.body.appendChild(counterElement);
     </script>
 </body>
